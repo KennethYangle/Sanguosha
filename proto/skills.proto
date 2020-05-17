@@ -1,0 +1,8 @@
+syntax = "proto3";
+package SGSStruct;
+
+message Skill {
+    string name = 1;
+    string description = 2;
+    string explain = 3;
+}

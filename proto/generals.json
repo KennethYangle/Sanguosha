@@ -1,0 +1,60 @@
+{
+    "generals": [
+        {
+            "name": "刘备",
+            "country": 1,
+            "gender": 0,
+            "init_physical_limit": 4,
+            "init_physical_value": 4,
+            "skills": [
+                "仁德",
+                "激将"
+            ],
+            "title": "乱世的枭雄",
+            "description": "（161-223年），字玄德，蜀汉开国皇帝。",
+            "package_first": "标准",
+            "package_second": "标准包",
+            "skin": {
+                "name": "经典形象",
+                "description": "（161-223年），字玄德，蜀汉开国皇帝。",
+                "image_path": "../resources/liubei/jingdianxingxiang.png",
+                "skill_dubs": [
+                    {
+                        "skill": "仁德",
+                        "dub": [
+                            "惟贤惟德，能服于人。",
+                            "以德服人。"
+                        ],
+                        "audio": [
+                            {
+                                "dub": "惟贤惟德，能服于人。",
+                                "audio_path": "../resources/liubei/rende/1.wav"
+                            },
+                            {
+                                "dub": "以德服人。",
+                                "audio_path": "../resources/liubei/rende/2.wav"
+                            }
+                        ]
+                    },
+                    {
+                        "skill": "激将",
+                        "dub": [
+                            "尔等敢应战否？",
+                            "蜀将何在？"
+                        ],
+                        "audio": [
+                            {
+                                "dub": "尔等敢应战否？",
+                                "audio_path": "../resources/liubei/jijiang/1.wav"
+                            },
+                            {
+                                "dub": "蜀将何在？",
+                                "audio_path": "../resources/liubei/jijiang/2.wav"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

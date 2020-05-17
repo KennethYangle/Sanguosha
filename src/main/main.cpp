@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "card.h"
 #include "general.h"
+#include "generals.pb.h"
 
 #include <iostream>
 #include <typeinfo>

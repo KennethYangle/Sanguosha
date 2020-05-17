@@ -1,16 +1,25 @@
 syntax = "proto3";
 package SGSStruct;
 
+message GeneralPool {
+    repeated General generals = 1;
+}
+
 message General {
+    // 游戏相关
     string name = 1;
     Country country = 2;
     Gender gender = 3;
     int32 init_physical_limit = 4;
     int32 init_physical_value = 5;
-    repeated Skill skills = 6;
+    repeated string skills = 6;
+    // 武将信息
     string title = 7;
     string description = 8;
-    Skin skin = 9;
+    string package_first = 9;
+    string package_second = 10;
+    // 皮肤
+    Skin skin = 11;
 }
 
 enum Country {
@@ -26,12 +35,6 @@ enum Gender {
     female = 1;
 }
 
-message Skill {
-    string name = 1;
-    string description = 2;
-    string explain = 3;
-}
-
 message Skin {
     string name = 1;
     string description = 2;
@@ -40,7 +43,12 @@ message Skin {
 }
 
 message SkillDub {
-    Skill skill = 1;
-    string dub = 2;
-    string audio_path = 3;
+    string skill = 1;
+    repeated string dub = 2;
+    repeated Audio audio = 3;
+}
+
+message Audio {
+    string dub = 1;
+    string audio_path = 2;
 }

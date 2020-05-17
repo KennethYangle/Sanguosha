@@ -1,7 +1,7 @@
 # 三国杀（C++练习项目）
 
 ## 使用说明
-### 一、安装
+### 一、安装相关依赖
 #### 1、安装protobuf
 参考 [https://github.com/protocolbuffers/protobuf/blob/master/src/README.md](https://github.com/protocolbuffers/protobuf/blob/master/src/README.md)
 
@@ -23,6 +23,23 @@
     ```
     protoc --version
     ```
+
+### 二、编译
+```
+# 克隆本仓库
+git clone https://github.com/KennethYangle/Sanguosha.git
+# 进入路径
+cd Sanguosha
+# 创建build文件夹，外部编译
+mkdir build
+cd build
+# 编译
+cmake ..
+make
+# [可选]安装
+sudo make install
+```
+可执行文件在`Sanguosha/bin`或`/usr/local/bin`下的`sanguosha`
 
 ## 设计思路
 分为武将（技能），牌，流程。
