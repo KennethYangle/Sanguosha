@@ -1,0 +1,46 @@
+syntax = "proto3";
+package SGSStruct;
+
+message General {
+    string name = 1;
+    Country country = 2;
+    Gender gender = 3;
+    int32 init_physical_limit = 4;
+    int32 init_physical_value = 5;
+    repeated Skill skills = 6;
+    string title = 7;
+    string description = 8;
+    Skin skin = 9;
+}
+
+enum Country {
+    Wei = 0;
+    Shu = 1;
+    Wu = 2;
+    Qun = 3;
+    Shen = 4;
+}
+
+enum Gender {
+    male = 0;
+    female = 1;
+}
+
+message Skill {
+    string name = 1;
+    string description = 2;
+    string explain = 3;
+}
+
+message Skin {
+    string name = 1;
+    string description = 2;
+    string image_path = 3;
+    repeated SkillDub skill_dubs = 4;
+}
+
+message SkillDub {
+    Skill skill = 1;
+    string dub = 2;
+    string audio_path = 3;
+}
